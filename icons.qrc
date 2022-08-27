@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>Icons/FS.png</file>
+    <file>Icons/Gmail.png</file>
+    <file>Icons/ícone.png</file>
+    <file>Icons/Logo CEAI.png</file>
+    <file>Icons/Instagram.png</file>
+    <file>Icons/menu.png</file>
+    <file>Icons/menu2.png</file>
+    <file>Icons/whatsApp.png</file>
+  </qresource>
+</RCC>

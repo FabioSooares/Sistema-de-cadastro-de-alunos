@@ -1,0 +1,2203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema de Cadastro CEAI</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/Icons/ícone.png</normaloff>:/Icons/ícone.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 170, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">*{
+border:none;
+}
+QLabel{
+	color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_6">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="1">
+     <widget class="QFrame" name="Main_Conteiner">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>40</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="Header">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>7</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QPushButton" name="btn_toggle">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/icons/Icons/menu2.png</normaloff>:/icons/Icons/menu2.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <family>Comic Sans MS</family>
+              <pointsize>24</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Sistema de cadastro</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="Main_Frame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QStackedWidget" name="Pages">
+            <property name="minimumSize">
+             <size>
+              <width>500</width>
+              <height>280</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>2000</width>
+              <height>1500</height>
+             </size>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="pg_home">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>10</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="lbl_logo_login_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>480</width>
+                  <height>280</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>850</width>
+                  <height>400</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap resource="icons.qrc">:/icons/Icons/Logo CEAI.png</pixmap>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pg_cadastrar">
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>10</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QTabWidget" name="tabWidget">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(0, 170, 255);
+border-radius:30px</string>
+                </property>
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="tab_aluno">
+                 <attribute name="title">
+                  <string>Cadastrar Aluno(a)</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <item>
+                   <widget class="QFrame" name="frame_4">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(194, 232, 255);</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout">
+                     <item row="0" column="2" colspan="5">
+                      <widget class="QLabel" name="label_6">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                         <pointsize>20</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 0);</string>
+                       </property>
+                       <property name="text">
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;ALUNO:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0" colspan="4">
+                      <widget class="QLineEdit" name="txt_nome">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Nome do Aluno</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="4" colspan="4">
+                      <widget class="QLineEdit" name="txt_serie">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Série/ Ano</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="8">
+                      <widget class="QLineEdit" name="txt_nascimento">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Data de nascimento</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0" colspan="2">
+                      <widget class="QLineEdit" name="txt_naturalidade">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Naturalidade</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="2" colspan="4">
+                      <widget class="QLineEdit" name="txt_nacionalidade">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Nacionalidade</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="6" colspan="3">
+                      <widget class="QLineEdit" name="txt_telefone_aluno">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Telefone para contato</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="0" colspan="5">
+                      <widget class="QLineEdit" name="txt_pai">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Nome do Pai</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="5" colspan="4">
+                      <widget class="QLineEdit" name="txt_mae">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Nome da Mãe</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="0" colspan="5">
+                      <widget class="QLineEdit" name="txt_rg_aluno">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="echoMode">
+                        <enum>QLineEdit::Normal</enum>
+                       </property>
+                       <property name="cursorPosition">
+                        <number>0</number>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>RG Da criança</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="5" colspan="4">
+                      <widget class="QLineEdit" name="txt_cpf_aluno">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>CPF Da criança</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="5" column="0">
+                      <widget class="QLineEdit" name="txt_cep">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>CEP</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="5" column="1" colspan="8">
+                      <widget class="QLineEdit" name="txt_endereco">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Endereço</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="6" column="0" colspan="4">
+                      <widget class="QLineEdit" name="txt_bairro_aluno">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Bairro</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="6" column="4" colspan="5">
+                      <widget class="QLineEdit" name="txt_cidade_aluno">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Cidade</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="7" column="0" colspan="3">
+                      <widget class="QLineEdit" name="txt_professora">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Professora</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="7" column="3" colspan="4">
+                      <widget class="QLineEdit" name="txt_turma">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Turma</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="7" column="7" colspan="2">
+                      <widget class="QLineEdit" name="txt_email_aluno">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Email</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="8" column="0" colspan="9">
+                      <widget class="QLineEdit" name="txt_alergia">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>A criança é portadora de alguma alergia? Qual?</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="9" column="3" colspan="4">
+                      <widget class="QPushButton" name="btn_cadastrar_aluno_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>35</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                         <pointsize>14</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+	background-color: rgb(0, 170, 255);
+    border-radius:17px
+}
+
+QPushButton:hover{
+    color: rgb(255,255,255);
+	background-color: rgb(0, 0, 255);
+    border-radius:17px
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Cadastrar</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_professor">
+                 <attribute name="title">
+                  <string>Cadastrar Professor(a)</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_11">
+                  <item>
+                   <widget class="QFrame" name="frame_5">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(194, 232, 255);</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_2">
+                     <item row="0" column="1" colspan="4">
+                      <widget class="QLabel" name="label_7">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                         <pointsize>20</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 0);</string>
+                       </property>
+                       <property name="text">
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;PROFESSOR (A)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0" colspan="4">
+                      <widget class="QLineEdit" name="txt_nome_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Nome </string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="4" colspan="2">
+                      <widget class="QLineEdit" name="txt_nascimento_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Data de nascimento</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLineEdit" name="txt_naturalidade_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Naturalidade</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1" colspan="4">
+                      <widget class="QLineEdit" name="txt_nacionalidade_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Nacionalidade</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="5">
+                      <widget class="QLineEdit" name="txt_telefone_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Telefone</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="0" colspan="2">
+                      <widget class="QLineEdit" name="txt_rg_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>RG</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="2" colspan="4">
+                      <widget class="QLineEdit" name="txt_cpf_prof_2">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>CPF</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="0">
+                      <widget class="QLineEdit" name="txt_cep_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>CEP</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="1" colspan="5">
+                      <widget class="QLineEdit" name="txt_endereco_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Endereço</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="5" column="0" colspan="3">
+                      <widget class="QLineEdit" name="txt_bairro_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Bairro</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="5" column="3" colspan="3">
+                      <widget class="QLineEdit" name="txt_cidade_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Cidade</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="6" column="0" colspan="2">
+                      <widget class="QLineEdit" name="txt_disciplinas_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Leciona as disciplinas: </string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="6" column="2" colspan="4">
+                      <widget class="QLineEdit" name="txt_turma_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Leciona a turma: </string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="7" column="0" colspan="6">
+                      <widget class="QLineEdit" name="txt_email_prof">
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:9px</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Email</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="8" column="1" colspan="4">
+                      <widget class="QPushButton" name="btn_cadastrar_professor_3">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>35</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                         <pointsize>14</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+	background-color: rgb(0, 170, 255);
+    border-radius:17px
+}
+
+QPushButton:hover{
+    color: rgb(255,255,255);
+	background-color: rgb(0, 0, 255);
+    border-radius:17px
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Cadastrar</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_turma">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(0, 170, 255);
+border-radius:15px
+</string>
+                 </property>
+                 <attribute name="title">
+                  <string>Turmas</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_5">
+                    <property name="font">
+                     <font>
+                      <family>Comic Sans MS</family>
+                      <pointsize>14</pointsize>
+                      <italic>true</italic>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="tabletTracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(194, 232, 255);
+border-radius:10px</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Turmas&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout_6">
+                    <property name="spacing">
+                     <number>1</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QTableWidget" name="tableWidget">
+                      <property name="styleSheet">
+                       <string notr="true">QHeaderView::section {
+	background-color: rgb(249, 252, 86);
+	color: rgb(0,0,0);
+	
+	font: 700 italic 11pt &quot;Comic Sans MS&quot;;
+}
+
+QTableWidget{
+background-color: rgb(194, 232, 255);
+
+}</string>
+                      </property>
+                      <column>
+                       <property name="text">
+                        <string>Nome</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Comic Sans MS</family>
+                         <pointsize>10</pointsize>
+                         <italic>true</italic>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Série/Ano</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Nascimento</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Pai</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Mãe</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>CPF</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>RG</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Naturalidade</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Nacionalidade</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>CEP</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Cidade</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Bairro</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Endereço</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Turma</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Alergia</string>
+                       </property>
+                      </column>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_3">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(194, 232, 255);</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_7">
+                       <property name="spacing">
+                        <number>7</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>3</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>70</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>3</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="btn_excel">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>120</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="cursor">
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+   	color: rgb(0, 0, 0);
+	background-color: rgb(0, 170, 255);
+    border-radius:10px
+}
+
+QPushButton:hover{
+    color: rgb(0,0,0);
+	background-color: rgb(38, 255, 0);
+    border-radius:10px
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Gerar Excel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btn_alterar">
+                         <property name="minimumSize">
+                          <size>
+                           <width>120</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="cursor">
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+	color: rgb(0, 0, 0);
+		background-color: rgb(0, 170, 255);
+    border-radius:10px
+}
+
+QPushButton:hover{
+    color: rgb(0,0,0);
+	background-color: rgb(252, 252, 0);
+    border-radius:10px
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Alterar</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btn_excluir">
+                         <property name="minimumSize">
+                          <size>
+                           <width>120</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="cursor">
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	
+	background-color: rgb(0, 170, 255);
+    border-radius:10px
+}
+
+QPushButton:hover{
+    color: rgb(0, 0, 0);
+	background-color: rgb(255, 0, 0);
+    border-radius:10px
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Excluir</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="verticalSpacer_2">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLineEdit" name="lineEdit">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Comic Sans MS</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(194, 232, 255);
+
+border-radius:8px</string>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Pesquisar: </string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab">
+                 <attribute name="title">
+                  <string>Docentes</string>
+                 </attribute>
+                 <layout class="QHBoxLayout" name="horizontalLayout_8">
+                  <item>
+                   <widget class="QTableWidget" name="tableWidget_2">
+                    <property name="styleSheet">
+                     <string notr="true">QHeaderView::section {
+	background-color: rgb(249, 252, 86);
+	color: rgb(0,0,0);
+	
+	font: 700 italic 11pt &quot;Comic Sans MS&quot;;
+}
+
+QTableWidget{
+background-color: rgb(194, 232, 255);
+
+}</string>
+                    </property>
+                    <column>
+                     <property name="text">
+                      <string>Nome</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Comic Sans MS</family>
+                       <pointsize>10</pointsize>
+                       <italic>true</italic>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Série/Ano</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Nascimento</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Pai</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Mãe</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>CPF</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>RG</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Naturalidade</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Nacionalidade</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>CEP</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Cidade</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Bairro</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Endereço</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Turma</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Alergia</string>
+                     </property>
+                    </column>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_11">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(194, 232, 255);</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_9">
+                     <property name="spacing">
+                      <number>7</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>70</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>3</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QPushButton" name="btn_excel_2">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>120</width>
+                         <height>25</height>
+                        </size>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+   	color: rgb(0, 0, 0);
+	background-color: rgb(0, 170, 255);
+    border-radius:10px
+}
+
+QPushButton:hover{
+    color: rgb(0,0,0);
+	background-color: rgb(38, 255, 0);
+    border-radius:10px
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Gerar Excel</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btn_alterar_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>120</width>
+                         <height>25</height>
+                        </size>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+	color: rgb(0, 0, 0);
+		background-color: rgb(0, 170, 255);
+    border-radius:10px
+}
+
+QPushButton:hover{
+    color: rgb(0,0,0);
+	background-color: rgb(252, 252, 0);
+    border-radius:10px
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Alterar</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btn_excluir_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>120</width>
+                         <height>25</height>
+                        </size>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	
+	background-color: rgb(0, 170, 255);
+    border-radius:10px
+}
+
+QPushButton:hover{
+    color: rgb(0, 0, 0);
+	background-color: rgb(255, 0, 0);
+    border-radius:10px
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Excluir</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="verticalSpacer_3">
+                       <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pg_contato">
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <widget class="QFrame" name="frame_6">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_12">
+                 <item>
+                  <spacer name="verticalSpacer_6">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/icons/Icons/whatsApp.png&quot;/&gt;&lt;span style=&quot; font-size:18pt; vertical-align:super;&quot;&gt; (75) 99213-1117&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/icons/Icons/Gmail.png&quot;/&gt;&lt;span style=&quot; font-size:18pt; vertical-align:super;&quot;&gt;fabiososantos2@gmail.com&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/icons/Icons/Instagram.png&quot;/&gt;&lt;span style=&quot; font-size:18pt; vertical-align:super;&quot;&gt;_fabiosooares_&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_5">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pg_sobre">
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QFrame" name="frame_7">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <property name="spacing">
+                  <number>40</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>54</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>54</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_8">
+                   <property name="minimumSize">
+                    <size>
+                     <width>40</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>400</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_9">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_3">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_13">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>400</width>
+                        <height>400</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap resource="icons.qrc">:/icons/Icons/FS.png</pixmap>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_10">
+                   <property name="minimumSize">
+                    <size>
+                     <width>40</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_8">
+                <property name="font">
+                 <font>
+                  <family>Comic Sans MS</family>
+                  <pointsize>26</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;SOBRE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_9">
+                <property name="font">
+                 <font>
+                  <family>Comic Sans MS</family>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Este sistema de cadastro foi desenvolvido com o intuito de simplificar o cadastro de novos alunos no Centro Educacional Arco-íris (CEAI), sendo assim, o mesmo possibilitará que o mesmo serviço de antes seja realizado com mais praticidade e menos tempo. O desenvolvedor Fábio Soares, Profissional da área de análise e desenvolvimento de sistemas realizou todo o processo de criação do sistema, dês de a criação das telas até a implementação do banco de dados que aqui foi utilizado. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="Footer">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <family>Comic Sans MS</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Powed By: Fábio Soares</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QFrame" name="Left_Conteiner">
+      <property name="maximumSize">
+       <size>
+        <width>9</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <family>Comic Sans MS</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Powed By: Fábio Soares</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QToolBox" name="toolBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Comic Sans MS</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame {
+	background-color: rgb(65,65,65)
+
+}
+
+QToolBox{
+text-algin: left;
+	background-color: rgb(187, 231, 255);
+
+}
+
+QToolBox::tab{ 
+	Border-radius:5px;
+	background-color: rgb(194,232,255);
+	text-algin: left;
+
+}</string>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>98</width>
+               <height>427</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <attribute name="label">
+              <string>Painel de controle:</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <property name="spacing">
+               <number>4</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>4</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="btn_home">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Comic Sans MS</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+	background-color: rgb(239, 78, 69);
+    border-radius:15px
+}
+
+QPushButton:hover{
+    color: rgb(255, 255, 255);
+	
+	background-color: rgb(255, 0, 0);
+    border-radius:15px
+}</string>
+                </property>
+                <property name="text">
+                 <string>Home</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_cadastrar">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Comic Sans MS</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+	background-color: rgb(252, 227, 36);
+    border-radius:15px
+}
+
+QPushButton:hover{
+    color: rgb(255, 255, 255);
+	background-color: rgb(252, 252, 0);
+    border-radius:15px
+}</string>
+                </property>
+                <property name="text">
+                 <string>Cadastrar </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_contato">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Comic Sans MS</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+	background-color: rgb(113, 191, 79);
+    border-radius:15px
+}
+
+QPushButton:hover{
+    color: rgb(255, 255, 255);
+	background-color: rgb(38, 255, 0);
+    border-radius:15px
+}</string>
+                </property>
+                <property name="text">
+                 <string>Contato</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_sobre">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Comic Sans MS</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+	background-color: rgb(108, 97, 169);
+    border-radius:15px
+}
+
+QPushButton:hover{
+    color: rgb(255, 255, 255);
+	background-color: rgb(83, 0, 116);
+    border-radius:15px
+}</string>
+                </property>
+                <property name="text">
+                 <string>Sobre</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>211</width>
+               <height>427</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(194, 232, 255);</string>
+             </property>
+             <attribute name="label">
+              <string>Informações adicionais:</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="font">
+                 <font>
+                  <family>Comic Sans MS</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#001e36;&quot;&gt;Usuário: Arco-íris&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#001e36;&quot;&gt;Sistema: Cadastro de alunos&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#001e36;&quot;&gt;Status: Ativo&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#001e36;&quot;&gt;Desenvolvedor: Fábio Soares&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#001e36;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#001e36;&quot;&gt;Version -- 1.0&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#001e36;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
