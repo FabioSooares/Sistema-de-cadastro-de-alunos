@@ -1,11 +1,14 @@
-from turtle import width
 from PySide6 import QtCore
 from PySide6.QtCore import QCoreApplication
 from PySide6.QtGui import QIcon
-from PySide6.QtWidgets import (QApplication, QMessageBox, QMainWindow, QMessageBox, QTableWidgetItem)
+from PySide6.QtWidgets import (QApplication, QMainWindow, QMessageBox, QMessageBox, QTableWidgetItem)
 from ui_main import Ui_MainWindow
 import sys
+from ui_funtions import *
 from database import Data_base
+import pandas as pd
+import sqlite3
+
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     
@@ -32,9 +35,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         #        Página cadastrar      #
         ################################
         self.btn_cadastrar_aluno_2.clicked.connect(self.cadastrarAlunos)
+
+        #self.buscar_alunos()
         
-        
-    
     def leftConteiner(self):
         
         width = self.Left_Conteiner.width()
@@ -45,7 +48,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             newWidth = 9
             
         self.animation = QtCore.QPropertyAnimation(self.Left_Conteiner, b'maximumWidth')
-        self.animation.setDuration(1500)
+        self.animation.setDuration(1200)
         self.animation.setStartValue(width)
         self.animation.setEndValue(newWidth)
         self.animation.setEasingCurve(QtCore.QEasingCurve.InOutBack)
@@ -61,7 +64,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.txt_naturalidade.text(), self.txt_nacionalidade.text(), self.txt_telefone_aluno.text(), self.txt_pai.text(), 
             self.txt_mae.text(), self.txt_rg_aluno.text(), self.txt_cpf_aluno.text(), self.txt_cep.text(), self.txt_endereco.text(), 
             self.txt_bairro_aluno.text(), self.txt_cidade_aluno.text(), self.txt_professora.text(), self.txt_turma.text(), 
-            self.txt_email_aluno.text(), self.txt_alergia.text(), )
+            self.txt_email_aluno.text(), self.txt_alergia.text())
             
             #############################
             #Cadastrar no banco de dados#
@@ -71,7 +74,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             msg = QMessageBox()
             msg.setIcon(QMessageBox.Information)
             msg.setWindowTitle("Casdastro Realizado")
-            msg.setText("Cadastro Realizado com sucesso  ;) ")
+            msg.setText("Cadastro Realizado com sucesso")
             msg.exec()
             db.close_connection()
             return
@@ -79,19 +82,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             msg = QMessageBox()
             msg.setIcon(QMessageBox.Critical)
             msg.setWindowTitle("Erro")
-            msg.setText("Erro ao cadastrar =(  Verifique se as informações foram preenchidadas corretamente!")
+            msg.setText("""Erro ao cadastrar! 
+Verifique se as informações foram preenchidadas corretamente.""")
             msg.exec()
             db.close_connection()
             return
         
-    
-        
 if __name__ == "__main__":
     db = Data_base()
-    #db.connect()
+    db.connect()
     
-    #db.create_tab_turmas
-    #db.close_connection()
+    db.create_table_turmas()
+    db.close_connection()
     
     app = QApplication(sys.argv)
     window = MainWindow()
