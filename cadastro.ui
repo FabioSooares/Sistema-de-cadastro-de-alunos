@@ -96,7 +96,7 @@ QLabel{
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="icons.qrc">
+             <iconset>
               <normaloff>:/icons/Icons/menu2.png</normaloff>:/icons/Icons/menu2.png</iconset>
             </property>
             <property name="iconSize">
@@ -171,7 +171,7 @@ QLabel{
              </size>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="pg_home">
              <layout class="QHBoxLayout" name="horizontalLayout">
@@ -208,7 +208,7 @@ QLabel{
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap resource="icons.qrc">:/icons/Icons/Logo CEAI.png</pixmap>
+                 <pixmap>:/icons/Icons/Logo CEAI.png</pixmap>
                 </property>
                 <property name="scaledContents">
                  <bool>true</bool>
@@ -1715,7 +1715,7 @@ QPushButton:hover{
                        <string/>
                       </property>
                       <property name="pixmap">
-                       <pixmap resource="icons.qrc">:/icons/Icons/FS.png</pixmap>
+                       <pixmap>:/icons/Icons/FS.png</pixmap>
                       </property>
                       <property name="scaledContents">
                        <bool>true</bool>
